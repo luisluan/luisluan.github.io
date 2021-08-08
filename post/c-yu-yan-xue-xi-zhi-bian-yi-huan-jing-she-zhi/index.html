@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://luisluan.github.io/favicon.ico?v=1628408879634">
+<link rel="shortcut icon" href="https://luisluan.github.io/favicon.ico?v=1628410658047">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://luisluan.github.io/styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://luisluan.github.io">
-        <img class="avatar" src="https://luisluan.github.io/images/avatar.png?v=1628408879634" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://luisluan.github.io/images/avatar.png?v=1628410658047" alt="" width="32px" height="32px">
       </a>
       <a href="https://luisluan.github.io">
         <h1 class="site-title">VOID</h1>
@@ -61,20 +61,8 @@
         
       
         
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
           <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
+            分类
           </a>
         
       
@@ -90,29 +78,39 @@
           <div class="post-info post-detail-info">
             <span><i class="icon-calendar-outline"></i> 2021-08-08</span>
             
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://luisluan.github.io/tag/nrkYYUZ1u/">
+                    C
+                    
+                  </a>
+                
+              </span>
+            
           </div>
           <div class="post-content">
-            <h2 id="已经2020的年代了turbo-c和dev-c类似的环境还是算了吧从开始学就用业界使用的开发环境比较靠谱">已经2020+的年代了，turbo C和Dev C++类似的环境还是算了吧，从开始学就用业界使用的开发环境比较靠谱。</h2>
+            <h2 id="已经2020的年代了turbo-c和dev-c类似的环境还是算了吧从开始学就用业界使用的开发环境比较靠谱"><strong>已经2020+的年代了，turbo C和Dev C++类似的环境还是算了吧，从开始学就用业界使用的开发环境比较靠谱。</strong></h2>
 <h2 id="最简单的方法">最简单的方法</h2>
 <p>下载安装最新的visual studio community，然后把C++相关的workload都装好。</p>
 <h2 id="推荐的方法">推荐的方法</h2>
 <h3 id="安装-msys2-mingw-w64">安装 msys2 + mingw-w64</h3>
-<p><strong>msys2下载地址</strong>：[https://mirrors.bfsu.edu.cn/msys2/distrib/x86_64/]<br>
-安装过程参考msys2网站：[https://www.msys2.org/]，安装完成后不要立即运行<strong>pacman -Syu</strong>，到安装目录中找<strong>etc/pacman.d</strong>子目录，然后按照BFSU[https://mirrors.bfsu.edu.cn/help/msys2/]镜像站的说明修改配置文件。</p>
+<p><strong>msys2下载地址</strong>：(https://mirrors.bfsu.edu.cn/msys2/distrib/x86_64/))<br>
+安装过程参考msys2网站：(https://www.msys2.org/)，安装完成后不要立即运行<strong>pacman -Syu</strong>，到安装目录中找<strong>etc/pacman.d</strong>子目录，然后按照BFSU(https://mirrors.bfsu.edu.cn/help/msys2/)镜像站的说明修改配置文件。</p>
 <p><strong>更新pacman</strong>：安装完并修改完成配置文件后，运行 <strong>pacman -Syu</strong>，遇到提示输入y并回车。</p>
 <p><strong>安装mingw-w64-x86_64-toolchain</strong>：在msys2命令行窗口中运行：<br>
 ** pacman -S --needed base-devel mingw-w64-x86_64-toolchain** ，同样，遇到提示输入y并回车。</p>
 <p><strong>安装完验证</strong>：在开始菜单中找MSYS2文件夹，打开其中的MSYS2 MINGW 64bit，运行：<strong>gcc --version</strong> ，如果没有提示错误，显示出版本，这就对了。到这已经可以编译c语言程序了，但是为了后续开发方面，还需要安装个开发环境，可以写程序时自动代码补全，编译也不用写命令，可以设定断点调试程序等。</p>
 <h3 id="安装vscode开发环境">安装vscode开发环境</h3>
-<p>下载地址：[https://code.visualstudio.com/Download]<br>
+<p>下载地址：(https://code.visualstudio.com/Download)<br>
 下载速度略慢，有办法加速，网上可以搜一下，大概是替换链接中的部分地址。<br>
 安装比较简单，安装完成后，进行配置。</p>
 <h3 id="配置vscode">配置vscode</h3>
 <p><img src="https://luisluan.github.io/post-images/1628405943531.PNG" alt="" loading="lazy"><br>
 在左侧extensions选项卡，搜索C，安装C/C++，然后搜索Code Runner，安装。<br>
-Code Runner好配置，参考：[https://zhuanlan.zhihu.com/p/54861567]<br>
+Code Runner好配置，参考：(https://zhuanlan.zhihu.com/p/54861567)<br>
 在配置C/C++之前，需要先把msys2安装文件的mingw64\bin目录添加到系统环境变量<br>
-剩余的配置工作参考：[https://zhuanlan.zhihu.com/p/109335025]</p>
+剩余的配置工作参考：(https://zhuanlan.zhihu.com/p/109335025)</p>
 
           </div>
         </div>
